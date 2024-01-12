@@ -19,15 +19,8 @@ public:
     Block(string n, string t, float h, float x, float y, float z) : name(n), 
     texture(t), hardness(h){hp = 100;}
 
-    float get_hp()
-    {
-        return hp;
-    }
-
-    void apply_dmg(int val)
-    {
-        hp -= val * modifier +12;
-    }
+    float get_hp(){return hp;}
+    void apply_dmg(int val){hp -= val * modifier +12;}
 
 };
 
